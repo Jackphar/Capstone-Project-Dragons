@@ -3,6 +3,7 @@ package tek.sdet.framework.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 import tek.sdet.framework.base.BaseSetup;
 
 public class RetailSignInPage extends BaseSetup {
@@ -14,31 +15,27 @@ public class RetailSignInPage extends BaseSetup {
 	@FindBy(id = "email")
 	public WebElement emailField;
 	
-	@FindBy(id="password")
+	@FindBy(id = "password")
 	public WebElement passwordField;
 	
-	@FindBy(xpath ="//button[@type='submit']")
+	@FindBy(xpath = "//button[text()='Login']")
 	public WebElement loginButton;
-
-	@FindBy(id ="newAccountBtn")
-	public WebElement newAccountButton;
 	
-	@FindBy(id="nameInput")
-	public WebElement nameInput;
+	@FindBy(id = "newAccountBtn")
+	public WebElement createNewAccountBtn;
 	
-	@FindBy(id="emailInput")
-	public WebElement emailInput;
+	@FindBy(id = "nameInput")
+	public WebElement nameInputSignup;
 	
-	@FindBy(id="passwordInput")
-	public WebElement passwordInput;
+	@FindBy(id = "emailInput")
+	public WebElement emailInputSignup;
 	
-	@FindBy(id="confirmPasswordInput")
-	public WebElement confirmPasswordInput;
+	@FindBy(id = "passwordInput")
+	public WebElement passwordInputSignup;
 	
-	@FindBy(id="signupBtn")
-	public WebElement signUpButton;
+	@FindBy(id = "confirmPasswordInput")
+	public WebElement confirmPassInputSignup;
 	
-	@FindBy(id="profileImage")
-	public WebElement profileImage;
-	
+	@FindBy(id = "signupBtn")
+	public WebElement signupBtn;
 }

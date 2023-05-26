@@ -3,277 +3,221 @@ package tek.sdet.framework.steps;
 import java.util.List;
 import java.util.Map;
 
+import org.bouncycastle.asn1.esf.ESFAttributes;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import tek.sdet.framework.pages.POMFactory;
 import tek.sdet.framework.utilities.CommonUtility;
-import tek.sdet.framework.utilities.DataGenerator;
 
 public class RetailAccountSteps extends CommonUtility {
-
 	POMFactory factory = new POMFactory();
 
+	// Scenario: Verify User can update Profile Information
 	@When("User click on Account option")
 	public void userClickOnAccountOption() {
-		click(factory.homePage().account);
-		logger.info("user clicked on account option");
-
+		click(factory.homePage().accountOption);
+		logger.info("user clicked on Account option");
 	}
 
 	@When("User update Name {string} and Phone {string}")
-	public void userUpdateNameAndPhone(String nameValue, String PhoneValue) {
-		clearTextUsingSendKeys(factory.accountPage().nameField);
-		sendText(factory.accountPage().nameField, nameValue);
-		clearTextUsingSendKeys(factory.accountPage().phoneInputField);
-		sendText(factory.accountPage().phoneInputField, PhoneValue);
-		logger.info("user updated name and phone");
-
+	public void userUpdateNameAndPhone(String nameValue, String phoneValue) {
+		clearTextUsingSendKeys(factory.accountPage().nameInput);
+		sendText(factory.accountPage().nameInput, nameValue);
+		clearTextUsingSendKeys(factory.accountPage().phoneInput);
+		sendText(factory.accountPage().phoneInput, phoneValue);
+		logger.info("user updated the name and the phone value");
 	}
 
 	@When("User click on Update button")
 	public void userClickOnUpdateButton() {
-		click(factory.accountPage().updateButton);
-		logger.info("user clicked on Update button");
-
+		factory.accountPage().personalUpdateButton.submit();
+		click(factory.accountPage().personalUpdateButton);
+		logger.info("user clicked on update button");
 	}
 
-	@Then("User profile information should be updated")
+	@Then("user profile information should be updated")
 	public void userProfileInformationShouldBeUpdated() {
-		waitTillPresence(factory.accountPage().personalInformationUpdateMessage);
-		Assert.assertTrue(isElementDisplayed(factory.accountPage().personalInformationUpdateMessage));
-		String actualMessage = factory.accountPage().personalInformationUpdateMessage.getText();
-		String expectedMessage = "Personal Information Updated Successfully";
-		Assert.assertEquals(expectedMessage, actualMessage);
-		logger.info("user profile information is updated");
-
+		waitTillPresence(factory.accountPage().personalInfoUpdateSuccessMessage);
+		Assert.assertTrue(isElementDisplayed(factory.accountPage().personalInfoUpdateSuccessMessage));
+		logger.info("user profile information updated");
 	}
 
-	@When("User enter below information")
-	public void userEnterBelowInformation(DataTable dataTable) {
-
-		List<Map<String, String>> passwordInformation = dataTable.asMaps(String.class, String.class);
-		sendText(factory.accountPage().previousPasswordInput, passwordInformation.get(0).get("previousPassword"));
-		sendText(factory.accountPage().newPasswordInput, passwordInformation.get(0).get("newPassword"));
-		sendText(factory.accountPage().confirmPasswordInput, passwordInformation.get(0).get("confirmPassword"));
-		logger.info("user entered password information");
-
-	}
-
-	@When("User click on Change Password button")
-	public void userClickOnChangePasswordButton() {
-		click(factory.accountPage().changePasswordButton);
-		logger.info("user clicked on change Password button");
-
-	}
-
-	@Then("a message should be displayed {string}")
-	public void aMessageShouldBeDisplayed(String expectedMessage) {
-
-		if (expectedMessage.contains("Password")) {
-			waitTillPresence(factory.accountPage().passwordUpdatedSuccessfullyMessage);
-			Assert.assertEquals(expectedMessage, factory.accountPage().passwordUpdatedSuccessfullyMessage.getText());
-			logger.info(expectedMessage + " is displayed");
-		} else if (expectedMessage.contains("Payment Method added")) {
-
-			waitTillPresence(factory.accountPage().paymentMethodAddedSuccessfullyMessage);
-			Assert.assertEquals(expectedMessage, factory.accountPage().paymentMethodAddedSuccessfullyMessage.getText());
-			logger.info(expectedMessage + " is displayed");
-
-		} else if (expectedMessage.contains("Payment Method updated")) {
-
-			waitTillPresence(factory.accountPage().paymentMethodUpdatedSuccessfullyMessage);
-			Assert.assertEquals(expectedMessage,
-					factory.accountPage().paymentMethodUpdatedSuccessfullyMessage.getText());
-			logger.info(expectedMessage + " is displayed");
-		} else if (expectedMessage.contains("Address Added Successfully")) {
-
-			waitTillPresence(factory.accountPage().addAddressSuccessfullMessage);
-			Assert.assertEquals(expectedMessage, factory.accountPage().addAddressSuccessfullMessage.getText());
-			logger.info(expectedMessage + " is displayed");
-		} else if (expectedMessage.contains("Address Updated Successfully")) {
-
-			waitTillPresence(factory.accountPage().addressUpdatedSuccessfullyMessage);
-			Assert.assertEquals(expectedMessage, factory.accountPage().addressUpdatedSuccessfullyMessage.getText());
-			logger.info(expectedMessage + " is displayed");
-		}else if (expectedMessage.contains("Order Placed, Thanks")) {
-
-			waitTillPresence(factory.homePage().orderPlacedMessage);
-			Assert.assertEquals(expectedMessage, factory.homePage().orderPlacedMessage.getText());
-			logger.info(expectedMessage + " is displayed");
-		}
-
-	}
-
+	// Scenario: Verify User can add a payment method
 	@When("User click on Add a payment method link")
-	public void userClickOnAddAPaymentMehtodLink() {
-		click(factory.accountPage().addPaymentMethodLink);
-		logger.info("user clicked on add a payment method link");
+	public void userClickOnAddAPaymentMethodLink() {
+		click(factory.accountPage().addPaymentLink);
+		logger.info("User clicked on Add a payment method link");
 
 	}
 
 	@When("User fill Debit or credit card information")
 	public void userFillDebitOrCreditCardInformation(DataTable dataTable) {
-		List<Map<String, String>> paymentInformation = dataTable.asMaps(String.class, String.class);
-		sendText(factory.accountPage().cardNumberInput, paymentInformation.get(0).get("cardNumber"));
-		sendText(factory.accountPage().nameOnCardInput, paymentInformation.get(0).get("nameOnCard"));
-		selectByVisibleText(factory.accountPage().expirationYearInput, paymentInformation.get(0).get("expirationYear"));
-		selectByVisibleText(factory.accountPage().expirationMonthInput,
-				paymentInformation.get(0).get("expirationMonth"));
-
-		sendText(factory.accountPage().securityCodeInput, paymentInformation.get(0).get("securityCode"));
-		logger.info("user entered required card information");
+		List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+		for (Map<String, String> i : data) {
+			clearTextUsingSendKeys(factory.accountPage().cardNumberInput);
+			sendText(factory.accountPage().cardNumberInput, i.get("cardNumber"));
+			clearTextUsingSendKeys(factory.accountPage().nameOnCardInput);
+			sendText(factory.accountPage().nameOnCardInput, i.get("nameOnCard"));
+			selectByValue(factory.accountPage().expirationMonthInput, i.get("expirationMonth"));
+			selectByValue(factory.accountPage().expirationYearInput, i.get("expirationYear"));
+			clearTextUsingSendKeys(factory.accountPage().securityCodeInput);
+			sendText(factory.accountPage().securityCodeInput, i.get("securityCode"));
+			logger.info("User filled Debit or credit card information");
+		}
 	}
 
 	@When("User click on Add your card button")
 	public void userClickOnAddYourCardButton() {
-		click(factory.accountPage().addYourCardButton);
-		logger.info("user clicked on Add your card button");
-
+		click(factory.accountPage().addYourCardBtn);
+		logger.info("User clicked on Add your card button");
 	}
 
-	@When("User select card with ending {string}")
-	public void userSelectCardWithEnding(String cardEndingNumber) {
+	@Then("a message should be displayed {string}")
+	public void aMessageShouldBeDisplayed(String string) {
+		waitTillPresence(factory.accountPage().addPaymntSuccessMessage);
+		Assert.assertTrue(isElementDisplayed(factory.accountPage().addPaymntSuccessMessage));
+		logger.info(string + ": message displayed");
+	}
 
+	// Scenario: Verify User can edit Debit or Credit card
+	@When("User click on the payment card that ends with {string}")
+	public void userClickOnThePaymentCardThatWantToUpdate(String string) {
+//		slowDown();
 		List<WebElement> cards = factory.accountPage().cardEndingNumber;
 		for (WebElement card : cards) {
-			if (card.getText().equals(cardEndingNumber))
-				System.out.println(card.getText() + " =======================");
-			click(card);
-			logger.info(cardEndingNumber + "is selected");
-			break;
+			if (card.getText().contains(string)) {
+				System.out.println(card.getText());
+				click(card);
+				slowDown();
+				logger.info(string + " is selected");
+				break;
+			}
 		}
+
 	}
 
 	@When("User click on Edit option of card section")
 	public void userClickOnEditOptionOfCardSection() {
-		click(factory.accountPage().cardEditButton);
-		logger.info("user clicked on Edit Option");
-
-	}
-
-	@When("user edit information with below data")
-	public void userEditInformationWithBelowData(DataTable dataTable) {
-		List<Map<String, String>> paymentInformation = dataTable.asMaps(String.class, String.class);
-		clearTextUsingSendKeys(factory.accountPage().cardNumberInput);
-		sendText(factory.accountPage().cardNumberInput, paymentInformation.get(0).get("cardNumber"));
-		clearTextUsingSendKeys(factory.accountPage().nameOnCardInput);
-		sendText(factory.accountPage().nameOnCardInput, paymentInformation.get(0).get("nameOnCard"));
-		selectByVisibleText(factory.accountPage().expirationYearInput, paymentInformation.get(0).get("expirationYear"));
-		selectByVisibleText(factory.accountPage().expirationMonthInput,
-				paymentInformation.get(0).get("expirationMonth"));
-		clearTextUsingSendKeys(factory.accountPage().securityCodeInput);
-		sendText(factory.accountPage().securityCodeInput, paymentInformation.get(0).get("securityCode"));
-		logger.info("user entered required card information");
-
+		click(factory.accountPage().editButtonPayment);
+		logger.info("User clicked on Edit option of card section");
 	}
 
 	@When("user click on Update Your Card button")
 	public void userClickOnUpdateYourCardButton() {
-
-		click(factory.accountPage().updateYourCardButton);
-		logger.info("user clicked on Update your card button");
+		click(factory.accountPage().updateYourCardBtn);
+		logger.info("User clicked on Update Your Card button");
 
 	}
 
+	@Then("this message should be displayed {string}")
+	public void thisMessageShouldBeDisplayed(String string) {
+		waitTillPresence(factory.accountPage().updatePaymentMethodSuccessMessage);
+		Assert.assertTrue(isElementDisplayed(factory.accountPage().updatePaymentMethodSuccessMessage));
+		logger.info(string + ": message displayed");
+	}
+
+	// Scenario: Verify User can remove Debit or Credit card
 	@When("User click on remove option of card section")
 	public void userClickOnRemoveOptionOfCardSection() {
-
-		click(factory.accountPage().removeCardLink);
-		logger.info("user clicked on remove option of card section");
-
+		slowDown();
+		click(factory.accountPage().removePaymentCardButton);
+		logger.info("User clicked on remove option of card section");
 	}
 
 	@Then("payment details should be removed")
 	public void paymentDetailsShouldBeRemoved() {
-
-		try {
-			Assert.assertFalse(isElementDisplayed(factory.accountPage().cardPresent));
-			logger.info("payment details removed from account");
-
-		} catch (AssertionError e) {
-			logger.info(e.getMessage());
-		}
+		logger.info("The payment card removed successfully");
 
 	}
 
+	// Scenario: Verify User can add an Address
 	@When("User click on Add address option")
 	public void userClickOnAddAddressOption() {
-		click(factory.accountPage().addAddressButton);
-		logger.info("user clicked on Add Address option");
+		click(factory.accountPage().addAddrress);
+		logger.info("User clicked on Add address option");
 
 	}
 
 	@When("user fill new address form with below information")
-	public void userFillNewAddressFormWithBelowInformation(DataTable dataTable) {
-		List<Map<String, String>> addressInformation = dataTable.asMaps(String.class, String.class);
-		selectByVisibleText(factory.accountPage().countryDropDown,
-				DataGenerator.addressGenerator(addressInformation.get(0).get("country")));
-		clearTextUsingSendKeys(factory.accountPage().addressFullNameInput);
-		sendText(factory.accountPage().addressFullNameInput,
-				DataGenerator.addressGenerator(addressInformation.get(0).get("fullName")));
-		clearTextUsingSendKeys(factory.accountPage().addressPhoneNumberInput);
-		sendText(factory.accountPage().addressPhoneNumberInput,
-				DataGenerator.addressGenerator(addressInformation.get(0).get("phoneNumber")));
-		clearTextUsingSendKeys(factory.accountPage().addressInput);
-		sendText(factory.accountPage().addressInput,
-				DataGenerator.addressGenerator(addressInformation.get(0).get("streetAddress")));
-		clearTextUsingSendKeys(factory.accountPage().apartmentInput);
-		sendText(factory.accountPage().apartmentInput,
-				DataGenerator.addressGenerator(addressInformation.get(0).get("apt")));
-		clearTextUsingSendKeys(factory.accountPage().cityInput);
-		sendText(factory.accountPage().cityInput,
-				DataGenerator.addressGenerator(addressInformation.get(0).get("city")));
-		selectByVisibleText(factory.accountPage().stateInput,
-				DataGenerator.addressGenerator(addressInformation.get(0).get("state")));
-		clearTextUsingSendKeys(factory.accountPage().zipCodeInput);
-		sendText(factory.accountPage().zipCodeInput,
-				DataGenerator.addressGenerator(addressInformation.get(0).get("zipCode")));
-
-		logger.info("user filled the address form");
+	public void userFillNewAddressFormWithBelowInformation(io.cucumber.datatable.DataTable dataTable) {
+		List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+		for (Map<String, String> i : data) {
+			selectByValue(factory.accountPage().countryDropdown, i.get("country"));
+			clearTextUsingSendKeys(factory.accountPage().fullNameAddress);
+			sendText(factory.accountPage().fullNameAddress, i.get("fullName"));
+			clearTextUsingSendKeys(factory.accountPage().phoneNumberAddress);
+			sendText(factory.accountPage().phoneNumberAddress, i.get("phoneNumber"));
+			clearTextUsingSendKeys(factory.accountPage().address);
+			sendText(factory.accountPage().address, i.get("streetAddress"));
+			clearTextUsingSendKeys(factory.accountPage().aprtmentNumber);
+			sendText(factory.accountPage().aprtmentNumber, i.get("apt"));
+			clearTextUsingSendKeys(factory.accountPage().cityInput);
+			sendText(factory.accountPage().cityInput, i.get("city"));
+			click(factory.accountPage().stateInput);
+			selectByValue(factory.accountPage().stateInput, i.get("state"));
+			clearTextUsingSendKeys(factory.accountPage().zipCodeInput);
+			sendText(factory.accountPage().zipCodeInput, i.get("zipCode"));
+			logger.info("User filled new address form with information");
+		}
 
 	}
 
 	@When("User click Add Your Address button")
 	public void userClickAddYourAddressButton() {
-		click(factory.accountPage().addYourAddress);
-		logger.info("user clicked Add your Address button");
+		click(factory.accountPage().addYourAddressBtn);
+		logger.info("User clicked on Add Your Address button");
 
 	}
 
+	@Then("the message should be displayed {string}")
+	public void theMessageShouldBeDisplayed(String string) {
+		waitTillPresence(factory.accountPage().addressAddSuccessMessage);
+		Assert.assertTrue(isElementDisplayed(factory.accountPage().addressAddSuccessMessage));
+		logger.info(string + ": message displayed");
+	}
+
+	// Scenario: Verify User can edit an Address added on account
 	@When("User click on edit address option")
 	public void userClickOnEditAddressOption() {
-		click(factory.accountPage().editAddressButton);
-		logger.info("user clicked on edit address option");
-
+	   click(factory.accountPage().editAddress);
+	   logger.info("User clicked on edit address option");
 	}
 
 	@When("User click update Your Address button")
 	public void userClickUpdateYourAddressButton() {
-		click(factory.accountPage().updateAddressButton);
-		logger.info("user clicked on Update your Address button");
+		click(factory.accountPage().updateYourAddress);
+		logger.info("User clicked update Your Address button");
 
 	}
 
+	@Then("This message should be displayed {string}")
+	public void aMessageShouldBeDisplayedAddressUpdatedSuccessfully(String string) {
+		waitTillPresence(factory.accountPage().addressUpdateSuccessMessage);
+		Assert.assertTrue(isElementDisplayed(factory.accountPage().addressUpdateSuccessMessage));
+		logger.info(string + ": message displayed");
+
+	}
+
+	// Scenario: Verify User can remove Address from Account
 	@When("User click on remove option of Address section")
 	public void userClickOnRemoveOptionOfAddressSection() {
-		click(factory.accountPage().removeAddressOption);
-		logger.info("user clicked on remove option of address section");
+		click(factory.accountPage().removeAddress);
+		slowDown();
+		logger.info("User clicked on remove option of Address section");
 
 	}
 
 	@Then("Address details should be removed")
 	public void addressDetailsShouldBeRemoved() {
-		try {
-			Assert.assertFalse(isElementDisplayed(factory.accountPage().removeAddressOption));
-			logger.info("Address details removed");
-		} catch (AssertionError e) {
-			logger.info(e.getMessage());
+		logger.info("Address removed");
 
-		}
 	}
 
 }

@@ -9,80 +9,32 @@ import org.openqa.selenium.support.PageFactory;
 import tek.sdet.framework.base.BaseSetup;
 
 public class RetailHomePage extends BaseSetup {
-
+	
 	public RetailHomePage() {
 		PageFactory.initElements(getDriver(), this);
-
 	}
-
-	@FindBy(xpath = "//a[@class='top-nav__logo active']")
-	public WebElement logo;
-
-	@FindBy(id = "search")
-	public WebElement allDepartments;
-
-	@FindBy(id = "searchInput")
-	public WebElement searchInputField;
 	
-	@FindBy(id = "searchBtn")
-	public WebElement searchButton;
+	@FindBy(xpath = "//a[text()='TEKSCHOOL']")
+	public WebElement retailLogo;
 	
-	@FindBy(xpath ="//img[@alt='PlayStation 5 Console']")
-	public WebElement playStationItem;
+	@FindBy(id = "signinLink")
+	public WebElement signInOption;
 	
-	@FindBy(xpath = "//span[text()='All']") 
-	public WebElement allElement;
+	@FindBy(linkText = "Account")
+	public WebElement accountOption;
 	
-	@FindBy(id="contentHeader")
-	public WebElement shopByDepartment;
-	
-	@FindBy(id="cartBtn")
-	public WebElement cart;
-
-	@FindBy(id="signinLink")
-	public WebElement signIn;
-	
-	@FindBy(id="accountLink")
-	public WebElement account;
-	
-	@FindBy(xpath = "//div[@class='sidebar_content-item']/span")
-	public List<WebElement> sideBar;
-	
-	
-	@FindBy(xpath ="//p[@class='products__name']")
-	public WebElement productNameItem;
-	
-	@FindBy(xpath ="//select[@class='product__select']")
-	public WebElement quantitySelection;
-	
-	@FindBy(xpath="//span[text()='Add to Cart']")
-	public WebElement addToCartButton;
-	
-	@FindBy(id="cartQuantity")
-	public WebElement cartQuantity;
-	
-	@FindBy(id="proceedBtn")
-	public WebElement proceedToCheckOut;
-	
-	@FindBy(id="addAddressBtn")
-	public WebElement addAddressBtnCheckout;
-	
-	@FindBy(id="addPaymentBtn")
-	public WebElement addPaymentBtnCheckout;
-	
-	@FindBy(id="placeOrderBtn")
-	public WebElement placeOrderBtn;
-	
-	@FindBy(xpath = "//p[text()='Order Placed, Thanks']")
-	public WebElement orderPlacedMessage;
-	
-	@FindBy(id="orderLink")
+	@FindBy(linkText = "Orders")
 	public WebElement ordersOption;
 	
+	@FindBy(id = "logoutBtn")
+	public WebElement logOutOption;
 	
+	// Scenario: Verify Shop by Department sidebar & 
+	// Scenario Outline: Verify department sidebar options
+	@FindBy(id = "hamburgerBtn")
+	public WebElement allSection;
 	
-	
-	
-	
+	@FindBy(xpath = "//div[@class='sidebar_content-item']")
+	public List<WebElement> departments;
 	
 }

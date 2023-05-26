@@ -83,7 +83,7 @@ public class CommonUtility extends BaseSetup {
 	}
 
 	public void clearTextUsingSendKeys(WebElement toClear) {
-		toClear.sendKeys(Keys.CONTROL + "a");
+		toClear.sendKeys(Keys.COMMAND + "a");
 		toClear.sendKeys(Keys.DELETE);
 	}
 
@@ -174,7 +174,7 @@ public class CommonUtility extends BaseSetup {
 		actions.build().perform();
 	}
 
-	public WebElement fluientWaitforElement(WebElement element, int timoutSec, int pollingSec) {
+	public WebElement fluentWaitforElement(WebElement element, int timoutSec, int pollingSec) {
 		FluentWait<WebDriver> fWait = new FluentWait<WebDriver>(getDriver()).withTimeout(Duration.ofSeconds(timoutSec))
 				.pollingEvery(Duration.ofSeconds(pollingSec))
 				.ignoring(NoSuchElementException.class, TimeoutException.class)
@@ -226,6 +226,8 @@ public class CommonUtility extends BaseSetup {
 			e.printStackTrace();
 		}
 	}
+	
+	
 	
 
 }
