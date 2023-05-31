@@ -1,4 +1,4 @@
-@SignInFeature
+@SmokeTest
 Feature: Retail SignIn
 
   Background: 

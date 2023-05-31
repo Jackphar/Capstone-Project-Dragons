@@ -1,3 +1,4 @@
+@SmokeTest
 Feature: Retail Home
 
   Background: 
@@ -11,12 +12,12 @@ Feature: Retail Home
 
   @verifyDepartmentsOptions
   Scenario Outline: Verify department sidebar options
-  And User is on <department>
+    And User is on <department>
     Then below options are present in department
       | <optionOne> | <optionTwo> |
 
     Examples: 
-      | department  | optionOne                      | optionTwo                |
+      | department    | optionOne                      | optionTwo                |
       | 'Electronics' | TV & Video                     | Video Games              |
       | 'Computers'   | Accessories                    | Networking               |
       | 'Smart Home'  | Smart Home Lightning           | Plugs and Outlets        |

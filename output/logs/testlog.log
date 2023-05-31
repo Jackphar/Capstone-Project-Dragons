@@ -2024,3 +2024,183 @@
 2023-05-25 19:40:16,452 - logger_file -INFO - user clicked on Account option
 2023-05-25 19:40:21,747 - logger_file -INFO - User clicked on remove option of Address section
 2023-05-25 19:40:21,748 - logger_file -INFO - Address removed
+2023-05-25 20:37:30,459 - logger_file -INFO - user is on retail website
+2023-05-25 20:37:30,606 - logger_file -INFO - user cliked on Sign In option
+2023-05-25 20:37:30,857 - logger_file -INFO - user entered email and password
+2023-05-25 20:37:30,982 - logger_file -INFO - user clicked on login button
+2023-05-25 20:37:31,401 - logger_file -INFO - user logged in into account
+2023-05-25 20:37:31,509 - logger_file -INFO - user clicked on Account option
+2023-05-25 20:37:36,850 - logger_file -INFO - User clicked on remove option of Address section
+2023-05-25 20:37:36,854 - logger_file -INFO - Address removed
+2023-05-25 20:38:16,177 - logger_file -INFO - user is on retail website
+2023-05-25 20:38:16,270 - logger_file -INFO - user cliked on Sign In option
+2023-05-25 20:38:16,505 - logger_file -INFO - user entered email and password
+2023-05-25 20:38:16,573 - logger_file -INFO - user clicked on login button
+2023-05-25 20:38:17,035 - logger_file -INFO - user logged in into account
+2023-05-25 20:38:17,148 - logger_file -INFO - user clicked on Account option
+2023-05-25 21:13:48,745 - logger_file -INFO - user is on retail website
+2023-05-25 21:13:48,900 - logger_file -INFO - User clicked on All departments section
+2023-05-25 21:13:54,865 - logger_file -INFO - user is on retail website
+2023-05-25 21:13:55,017 - logger_file -INFO - User clicked on All departments section
+2023-05-25 21:13:57,123 - logger_file -INFO - TV & Video is displayed
+2023-05-25 21:13:57,162 - logger_file -INFO - Video Games is displayed
+2023-05-25 21:14:01,075 - logger_file -INFO - user is on retail website
+2023-05-25 21:14:01,224 - logger_file -INFO - User clicked on All departments section
+2023-05-25 21:14:07,063 - logger_file -INFO - user is on retail website
+2023-05-25 21:14:07,209 - logger_file -INFO - User clicked on All departments section
+2023-05-25 21:14:13,258 - logger_file -INFO - user is on retail website
+2023-05-25 21:14:13,401 - logger_file -INFO - User clicked on All departments section
+2023-05-25 21:14:19,297 - logger_file -INFO - user is on retail website
+2023-05-25 21:14:19,433 - logger_file -INFO - User clicked on All departments section
+2023-05-25 21:14:25,350 - logger_file -INFO - user is on retail website
+2023-05-25 21:14:25,500 - logger_file -INFO - user cliked on Sign In option
+2023-05-25 21:14:25,721 - logger_file -INFO - user entered email and password
+2023-05-25 21:14:25,844 - logger_file -INFO - user clicked on login button
+2023-05-25 21:14:26,254 - logger_file -INFO - user logged in into account
+2023-05-25 21:14:26,357 - logger_file -INFO - user clicked on Account option
+2023-05-25 21:14:26,622 - logger_file -INFO - user updated the name and the phone value
+2023-05-25 21:14:50,838 - logger_file -INFO - user is on retail website
+2023-05-25 21:14:50,952 - logger_file -INFO - user cliked on Sign In option
+2023-05-25 21:14:51,199 - logger_file -INFO - user entered email and password
+2023-05-25 21:14:51,318 - logger_file -INFO - user clicked on login button
+2023-05-25 21:14:51,681 - logger_file -INFO - user logged in into account
+2023-05-25 21:14:51,775 - logger_file -INFO - user clicked on Account option
+2023-05-25 21:14:51,836 - logger_file -INFO - User clicked on Add a payment method link
+2023-05-25 21:14:52,365 - logger_file -INFO - User filled Debit or credit card information
+2023-05-25 21:14:52,432 - logger_file -INFO - User clicked on Add your card button
+2023-05-25 21:15:36,415 - logger_file -INFO - user is on retail website
+2023-05-25 21:15:36,513 - logger_file -INFO - user cliked on Sign In option
+2023-05-25 21:15:36,731 - logger_file -INFO - user entered email and password
+2023-05-25 21:15:36,808 - logger_file -INFO - user clicked on login button
+2023-05-25 21:15:37,237 - logger_file -INFO - user logged in into account
+2023-05-25 21:15:37,325 - logger_file -INFO - user clicked on Account option
+2023-05-25 21:16:21,585 - logger_file -INFO - user is on retail website
+2023-05-25 21:16:21,721 - logger_file -INFO - user cliked on Sign In option
+2023-05-25 21:16:21,945 - logger_file -INFO - user entered email and password
+2023-05-25 21:16:22,067 - logger_file -INFO - user clicked on login button
+2023-05-25 21:16:22,452 - logger_file -INFO - user logged in into account
+2023-05-25 21:16:22,558 - logger_file -INFO - user clicked on Account option
+2023-05-25 21:16:27,749 - logger_file -INFO - 3456 is selected
+2023-05-25 21:16:32,845 - logger_file -INFO - User clicked on remove option of card section
+2023-05-25 21:16:32,845 - logger_file -INFO - The payment card removed successfully
+2023-05-25 21:16:36,745 - logger_file -INFO - user is on retail website
+2023-05-25 21:16:36,897 - logger_file -INFO - user cliked on Sign In option
+2023-05-25 21:16:37,114 - logger_file -INFO - user entered email and password
+2023-05-25 21:16:37,230 - logger_file -INFO - user clicked on login button
+2023-05-25 21:16:37,622 - logger_file -INFO - user logged in into account
+2023-05-25 21:16:37,730 - logger_file -INFO - user clicked on Account option
+2023-05-25 21:16:37,845 - logger_file -INFO - User clicked on Add address option
+2023-05-25 21:16:39,390 - logger_file -INFO - User filled new address form with information
+2023-05-25 21:16:39,504 - logger_file -INFO - User clicked on Add Your Address button
+2023-05-25 21:16:40,247 - logger_file -INFO - Address Added Successfully: message displayed
+2023-05-25 21:16:44,046 - logger_file -INFO - user is on retail website
+2023-05-25 21:16:44,197 - logger_file -INFO - user cliked on Sign In option
+2023-05-25 21:16:44,418 - logger_file -INFO - user entered email and password
+2023-05-25 21:16:44,536 - logger_file -INFO - user clicked on login button
+2023-05-25 21:16:44,942 - logger_file -INFO - user logged in into account
+2023-05-25 21:16:45,051 - logger_file -INFO - user clicked on Account option
+2023-05-25 21:16:45,291 - logger_file -INFO - User clicked on edit address option
+2023-05-25 21:16:46,866 - logger_file -INFO - User filled new address form with information
+2023-05-25 21:16:47,001 - logger_file -INFO - User clicked update Your Address button
+2023-05-25 21:16:47,723 - logger_file -INFO - Address Updated Successfully: message displayed
+2023-05-25 21:16:51,613 - logger_file -INFO - user is on retail website
+2023-05-25 21:16:51,760 - logger_file -INFO - user cliked on Sign In option
+2023-05-25 21:16:51,973 - logger_file -INFO - user entered email and password
+2023-05-25 21:16:52,087 - logger_file -INFO - user clicked on login button
+2023-05-25 21:16:52,493 - logger_file -INFO - user logged in into account
+2023-05-25 21:16:52,599 - logger_file -INFO - user clicked on Account option
+2023-05-25 21:16:57,773 - logger_file -INFO - User clicked on remove option of Address section
+2023-05-25 21:16:57,774 - logger_file -INFO - Address removed
+2023-05-25 21:17:01,476 - logger_file -INFO - user is on retail website
+2023-05-25 21:17:01,606 - logger_file -INFO - user cliked on Sign In option
+2023-05-25 21:17:01,823 - logger_file -INFO - user entered email and password
+2023-05-25 21:17:01,934 - logger_file -INFO - user clicked on login button
+2023-05-25 21:17:02,306 - logger_file -INFO - user logged in into account
+2023-05-25 21:17:02,774 - logger_file -INFO - User changed the category to Smart Home
+2023-05-25 21:17:03,233 - logger_file -INFO - User searched for kasa outdoor smart plug
+2023-05-25 21:17:03,328 - logger_file -INFO - User clicked on Search icon
+2023-05-25 21:17:08,402 - logger_file -INFO - User clicked on item
+2023-05-25 21:17:09,106 - logger_file -INFO - User selected quantity 2
+2023-05-25 21:17:09,478 - logger_file -INFO - User clicked Add to Cart button
+2023-05-25 21:17:14,498 - logger_file -INFO - The cart icon quantity changed to2
+2023-05-25 21:17:18,399 - logger_file -INFO - user is on retail website
+2023-05-25 21:17:18,550 - logger_file -INFO - user cliked on Sign In option
+2023-05-25 21:17:18,761 - logger_file -INFO - user entered email and password
+2023-05-25 21:17:18,868 - logger_file -INFO - user clicked on login button
+2023-05-25 21:17:19,266 - logger_file -INFO - user logged in into account
+2023-05-25 21:17:19,741 - logger_file -INFO - User changed the category to Electronics
+2023-05-25 21:17:20,192 - logger_file -INFO - User searched for Apex Legends
+2023-05-25 21:17:20,292 - logger_file -INFO - User clicked on Search icon
+2023-05-25 21:17:25,382 - logger_file -INFO - User clicked on item
+2023-05-25 21:17:26,072 - logger_file -INFO - User selected quantity 5
+2023-05-25 21:17:26,418 - logger_file -INFO - User clicked Add to Cart button
+2023-05-25 21:17:36,736 - logger_file -INFO - user is on retail website
+2023-05-25 21:17:36,867 - logger_file -INFO - user cliked on Sign In option
+2023-05-25 21:17:37,099 - logger_file -INFO - user entered email and password
+2023-05-25 21:17:37,219 - logger_file -INFO - user clicked on login button
+2023-05-25 21:17:37,615 - logger_file -INFO - user logged in into account
+2023-05-25 21:17:37,719 - logger_file -INFO - User clicked on Orders section
+2023-05-25 21:17:38,660 - logger_file -INFO - User clicked on first order in list
+2023-05-25 21:17:58,670 - logger_file -INFO - User clicked on Cancel The Order button
+2023-05-25 21:18:43,002 - logger_file -INFO - user is on retail website
+2023-05-25 21:18:43,124 - logger_file -INFO - user cliked on Sign In option
+2023-05-25 21:18:43,339 - logger_file -INFO - user entered email and password
+2023-05-25 21:18:43,460 - logger_file -INFO - user clicked on login button
+2023-05-25 21:18:43,812 - logger_file -INFO - user logged in into account
+2023-05-25 21:18:43,903 - logger_file -INFO - User clicked on Orders section
+2023-05-25 21:18:44,884 - logger_file -INFO - User clicked on first order in list
+2023-05-25 21:19:04,901 - logger_file -INFO - User clicked on Return Items button
+2023-05-25 21:19:49,156 - logger_file -INFO - user is on retail website
+2023-05-25 21:19:49,271 - logger_file -INFO - user cliked on Sign In option
+2023-05-25 21:19:49,485 - logger_file -INFO - user entered email and password
+2023-05-25 21:19:49,582 - logger_file -INFO - user clicked on login button
+2023-05-25 21:19:49,980 - logger_file -INFO - user logged in into account
+2023-05-25 21:19:50,079 - logger_file -INFO - User clicked on Orders section
+2023-05-25 21:19:50,976 - logger_file -INFO - User clicked on first order in list
+2023-05-25 21:19:51,060 - logger_file -INFO - User clicked on Review button
+2023-05-25 21:19:51,292 - logger_file -INFO - Good Quality Product: added as headline I strongly recommend this item: added as comment
+2023-05-25 21:19:51,374 - logger_file -INFO - User clicked on Add Your Review button
+2023-05-25 21:19:56,393 - logger_file -INFO - Your review was added successfully message displayed
+2023-05-25 21:20:00,132 - logger_file -INFO - user is on retail website
+2023-05-25 21:20:00,273 - logger_file -INFO - user cliked on Sign In option
+2023-05-25 21:20:00,450 - logger_file -INFO - user entered email and password
+2023-05-25 21:20:00,563 - logger_file -INFO - user clicked on login button
+2023-05-25 21:20:00,953 - logger_file -INFO - user logged in into account
+2023-05-25 21:20:04,780 - logger_file -INFO - user is on retail website
+2023-05-25 21:20:04,931 - logger_file -INFO - user cliked on Sign In option
+2023-05-30 17:49:51,603 - logger_file -INFO - user is on retail website
+2023-05-30 17:49:51,786 - logger_file -INFO - user cliked on Sign In option
+2023-05-30 17:49:52,031 - logger_file -INFO - user entered email and password
+2023-05-30 17:49:52,168 - logger_file -INFO - user clicked on login button
+2023-05-30 17:49:52,546 - logger_file -INFO - user logged in into account
+2023-05-30 17:49:52,664 - logger_file -INFO - user clicked on Account option
+2023-05-30 17:49:52,831 - logger_file -INFO - User clicked on Add address option
+2023-05-30 17:49:54,438 - logger_file -INFO - User filled new address form with information
+2023-05-30 17:49:54,579 - logger_file -INFO - User clicked on Add Your Address button
+2023-05-30 17:49:55,316 - logger_file -INFO - Address Added Successfully: message displayed
+2023-05-30 17:49:59,063 - logger_file -INFO - user is on retail website
+2023-05-30 17:49:59,169 - logger_file -INFO - user cliked on Sign In option
+2023-05-30 17:49:59,378 - logger_file -INFO - user entered email and password
+2023-05-30 17:49:59,439 - logger_file -INFO - user clicked on login button
+2023-05-30 17:49:59,900 - logger_file -INFO - user logged in into account
+2023-05-30 17:49:59,999 - logger_file -INFO - user clicked on Account option
+2023-05-30 17:50:00,109 - logger_file -INFO - User clicked on Add address option
+2023-05-30 17:50:01,603 - logger_file -INFO - User filled new address form with information
+2023-05-30 17:50:01,695 - logger_file -INFO - User clicked on Add Your Address button
+2023-05-30 17:50:02,418 - logger_file -INFO - Address Added Successfully: message displayed
+2023-05-30 17:54:25,065 - logger_file -INFO - user is on retail website
+2023-05-30 17:54:25,234 - logger_file -INFO - user cliked on Sign In option
+2023-05-30 17:54:25,468 - logger_file -INFO - user entered email and password
+2023-05-30 17:54:25,596 - logger_file -INFO - user clicked on login button
+2023-05-30 17:54:26,031 - logger_file -INFO - user logged in into account
+2023-05-30 17:54:26,200 - logger_file -INFO - user clicked on Account option
+2023-05-30 17:54:31,383 - logger_file -INFO - User clicked on remove option of Address section
+2023-05-30 17:54:31,385 - logger_file -INFO - Address removed
+2023-05-30 17:54:35,252 - logger_file -INFO - user is on retail website
+2023-05-30 17:54:35,377 - logger_file -INFO - user cliked on Sign In option
+2023-05-30 17:54:35,560 - logger_file -INFO - user entered email and password
+2023-05-30 17:54:35,620 - logger_file -INFO - user clicked on login button
+2023-05-30 17:54:36,085 - logger_file -INFO - user logged in into account
+2023-05-30 17:54:36,185 - logger_file -INFO - user clicked on Account option
+2023-05-30 17:54:41,367 - logger_file -INFO - User clicked on remove option of Address section
+2023-05-30 17:54:41,368 - logger_file -INFO - Address removed
