@@ -1,4 +1,4 @@
-@SmokeTest
+
 Feature: Retail Home
 
   Background: 

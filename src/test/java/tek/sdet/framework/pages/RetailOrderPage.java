@@ -101,18 +101,4 @@ public class RetailOrderPage extends BaseSetup {
 	public WebElement reviewAddedMessage;
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-	
-
 }
