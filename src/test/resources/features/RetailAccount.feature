@@ -1,4 +1,4 @@
-@smokeTest
+
 Feature: Retail Account
 
   Background: 
