@@ -11,7 +11,7 @@ Feature: Retail Account
 
   @updateProfile
   Scenario: Verify User can update Profile Information
-    And User update Name 'Adamn' and Phone '916-234-0087'
+    And User update Name 'JanJan' and Phone '916-234-1515'
     And User click on Update button
     Then user profile information should be updated
 
@@ -20,17 +20,17 @@ Feature: Retail Account
     And User click on Add a payment method link
     And User fill Debit or credit card information
       | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 5567567890120909 | Alizada     |               10 |           2029 |          120|
+      | 5567567890123535 | Jan     |               10 |           2029 |          120|
     And User click on Add your card button
     Then a message should be displayed 'Payment Method added successfully'
 
   @editPaymentMethod
   Scenario: Verify User can edit Debit or Credit card
-    And User click on the payment card that ends with '1212'
+    And User click on the payment card that ends with '5757'
     And User click on Edit option of card section
     And User fill Debit or credit card information
       | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 8765092387455757 | Adam        |              10 |           2042 |          787 |
+      | 8765092387458888 | Jan        |              10 |           2042 |          787 |
     And user click on Update Your Card button
     Then this message should be displayed 'Payment Method updated Successfully'
 
@@ -46,6 +46,7 @@ Feature: Retail Account
     And user fill new address form with below information
       | country     | fullName | phoneNumber  | streetAddress  | apt | city     | state | zipCode |
       | Spain | Nadia    | 916-234-3434 | 342 Cris Str |  12 | SpanCity | Barcelona |   34212 |
+       | India   | Ajmal   | 123-456-0098 | 123 Lajpat Str |  56 | Dehli | Bihar |   84653 |
     And User click Add Your Address button
     Then the message should be displayed 'Address Added Successfully'
 
@@ -54,7 +55,7 @@ Feature: Retail Account
     And User click on edit address option
     And user fill new address form with below information
       | country | fullName | phoneNumber  | streetAddress  | apt | city  | state | zipCode |
-      | India   | Ajmal   | 123-456-0098 | 123 Lajpat Str |  56 | Dehli | Bihar |   84653 |
+      | Afghanistan   | Ajmal   | 123-456-0098 | 123 Lajpat Str |  56 | Kabul | Kabul |   84653 |
     And User click update Your Address button
     Then This message should be displayed 'Address Updated Successfully'
 

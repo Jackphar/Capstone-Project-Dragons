@@ -20,8 +20,8 @@ Feature: Retail Order
 
   @placeOrder
   Scenario: Verify User can place an order with Shipping address and payment Method on file​​​​​​​
-    And User change the category to 'Electronics'
-    And User search for an item 'Apex Legends'
+    And User change the category to 'Smart Home'
+    And User search for an item 'kasa outdoor smart plug'
     And User click on Search icon
     And User click on item
     And User select quantity '5'

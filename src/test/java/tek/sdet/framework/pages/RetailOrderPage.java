@@ -81,6 +81,9 @@ public class RetailOrderPage extends BaseSetup {
 	@FindBy(id = "orderSubmitBtn")
 	public WebElement returnOrderBtn;
 	
+	@FindBy(id = "//input[@type='checkbox']")
+	public List<WebElement> selectItemToReturn;
+	
 	@FindBy(xpath = "//p[text()='Return was successfull']")
 	public WebElement returnMessage;
 	
