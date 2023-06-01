@@ -149,7 +149,8 @@ public class RetailOrderSteps extends CommonUtility {
 		logger.info(string + " message displayed");
 
 	}
-	// scenario: Verify User can write a review on order placed
+
+	// Scenario: Verify User can Return the order
 	@When("User click on Return Items button")
 	public void userClickOnReturnItemsButton() {
 		List<WebElement> listOfReturnOptions = factory.orderPage().returnItemsBtn;
@@ -159,38 +160,43 @@ public class RetailOrderSteps extends CommonUtility {
 		}
 		logger.info("User clicked on Return Items button");
 	}
+
 	@When("User select the Return Reason {string}")
 	public void userSelectTheReturnReason(String string) {
 		click(factory.orderPage().reasonSelection);
 		selectByVisibleText(factory.orderPage().reasonSelection, string);
 		logger.info(string + " reason selected");
 	}
+
 	@When("User select the drop off service {string}")
 	public void userSelectTheDropOffService(String string) {
 		click(factory.orderPage().dropOffInput);
 		selectByVisibleText(factory.orderPage().dropOffInput, string);
 		logger.info(string + " drop off selected");
-	   
+
 	}
+
 	@When("User click on Return Order button")
 	public void userClickOnReturnOrderButton() {
 		click(factory.orderPage().returnOrderBtn);
 		logger.info("User clicked on Return Order button");
-	 
+
 	}
+
 	@Then("a return message should be displayed {string}")
 	public void aReturnMessageShouldBeDisplayed(String string) {
 		Assert.assertEquals(string, factory.orderPage().returnMessage.getText());
 		logger.info(string + " message displayed");
 	}
-	
+
 	// Scenario: Verify User can write a review on order placed
 	@When("User click on Review button")
 	public void userClickOnReviewButton() {
 		click(factory.orderPage().reviewBtn);
 		logger.info("User clicked on Review button");
-	    
+
 	}
+
 	@When("User write Review headline {string} and {string}")
 	public void userWriteReviewHeadlineAnd(String string, String string2) {
 		clearTextUsingSendKeys(factory.orderPage().reviewHeadline);
@@ -198,14 +204,16 @@ public class RetailOrderSteps extends CommonUtility {
 		clearTextUsingSendKeys(factory.orderPage().reviewComment);
 		sendText(factory.orderPage().reviewComment, string2);
 		logger.info(string + ": added as headline " + string2 + ": added as comment");
-	  
+
 	}
+
 	@When("User click Add your Review button")
 	public void userClickAddYourReviewButton() {
 		click(factory.orderPage().reviewSubmitBtn);
 		logger.info("User clicked on Add Your Review button");
-	   
+
 	}
+
 	@Then("a review message should be displayed {string}")
 	public void aReviewMessageShouldBeDisplayed(String string) {
 		slowDown();
