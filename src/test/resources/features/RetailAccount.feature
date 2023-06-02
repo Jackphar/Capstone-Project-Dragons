@@ -4,14 +4,14 @@ Feature: Retail Account
   Background: 
     Given User is on retail website
     When User click on Sign in option
-    And User enter email 'testuser@test.us' and password 'Tek@12345'
+    And User enter email 'jackphar1@tekschool.us' and password 'Tek@12345'
     And User click on login button
     And User should be logged into Account
     When User click on Account option
 
   @updateProfile
   Scenario: Verify User can update Profile Information
-    And User update Name 'JanJanJan12' and Phone '916-234-1515'
+    And User update Name 'Jackphar' and Phone '916-234-1515'
     And User click on Update button
     Then user profile information should be updated
 
@@ -20,13 +20,12 @@ Feature: Retail Account
     And User click on Add a payment method link
     And User fill Debit or credit card information
       | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 5567567890126767 | JanJanJan        |              10 |           2029 |          120 |
+      | 5567567890126767 | Jackphar        |              10 |           2029 |          120 |
     And User click on Add your card button
     Then a message should be displayed 'Payment Method added sucessfully'
 
   @editPaymentMethod
   Scenario: Verify User can edit Debit or Credit card
-    And User click on the payment card that ends with '4040'
     And User click on Edit option of card section
     And User fill Debit or credit card information
       | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
@@ -36,7 +35,6 @@ Feature: Retail Account
 
   @removePaymentMethod
   Scenario: Verify User can remove Debit or Credit card
-    And User click on the payment card that ends with '1515'
     And User click on remove option of card section
     Then payment details should be removed
 

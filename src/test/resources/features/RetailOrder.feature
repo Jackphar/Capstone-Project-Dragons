@@ -4,7 +4,7 @@ Feature: Retail Order
   Background: 
     Given User is on retail website
     When User click on Sign in option
-    And User enter email 'testuser@test.us' and password 'Tek@12345'
+    And User enter email 'jackphar1@tekschool.us' and password 'Tek@12345'
     And User click on login button
     And User should be logged into Account
 
