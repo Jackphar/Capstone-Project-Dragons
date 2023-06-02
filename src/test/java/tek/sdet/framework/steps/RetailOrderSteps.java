@@ -63,7 +63,7 @@ public class RetailOrderSteps extends CommonUtility {
 	@Then("The cart icon quantity should change to {string}")
 	public void theCartIconQuantityShouldChangeTo(String string) {
 		slowDown();
-		Assert.assertEquals(factory.orderPage().cartQuantity.getText(), string);
+		Assert.assertEquals( string, factory.orderPage().cartQuantity.getText());
 		logger.info("The cart icon quantity changed to" + string);
 
 	}
@@ -93,7 +93,7 @@ public class RetailOrderSteps extends CommonUtility {
 
 	@Then("A message should be displayed {string}")
 	public void aMessageShouldBeDisplayedOrderPlacedThanks(String string) {
-		Assert.assertEquals(factory.orderPage().orderPlacedMsg.getText(), string);
+		Assert.assertEquals( string, factory.orderPage().orderPlacedMsg.getText());
 		logger.info(string + " displayed");
 
 	}
