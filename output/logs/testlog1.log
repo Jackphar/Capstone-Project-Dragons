@@ -3933,3 +3933,7 @@
 2023-06-01 17:30:49,115 [main] INFO logger_file - User filled Debit or credit card information
 2023-06-01 17:30:49,206 [main] INFO logger_file - User clicked on Add your card button
 2023-06-01 17:30:49,945 [main] INFO logger_file - Payment Method added sucessfully: message displayed
+2023-06-01 19:13:15,577 [main] INFO logger_file - user is on retail website
+2023-06-01 19:13:15,686 [main] INFO logger_file - user cliked on Sign In option
+2023-06-01 19:13:39,026 [main] INFO logger_file - user is on retail website
+2023-06-01 19:13:39,113 [main] INFO logger_file - user cliked on Sign In option
