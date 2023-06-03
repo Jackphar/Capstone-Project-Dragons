@@ -10,7 +10,7 @@ Feature: Retail Account
 
   @updateProfile
   Scenario: Verify User can update Profile Information
-    And User update Name 'ZiaZia' and Phone '916-234-1234'
+    And User update Name 'ZiaZiaJan' and Phone '916-234-1234'
     And User click on Update button
     Then user profile information should be updated
 
@@ -45,7 +45,6 @@ Feature: Retail Account
     And user fill new address form with below information
       | country | fullName | phoneNumber  | streetAddress  | apt | city     | state     | zipCode |
       | Spain   | Nadia    | 916-234-3434 | 342 Cris Str   |  12 | SpanCity | Barcelona |   34212 |
-      | India   | Ajmal    | 123-456-0098 | 123 Lajpat Str |  56 | Dehli    | Bihar     |   84653 |
     And User click Add Your Address button
     Then the message should be displayed 'Address Added Successfully'
 
