@@ -1,4 +1,4 @@
-
+#@TestToday
 Feature: Retail Account
 
   Background: 
@@ -11,7 +11,7 @@ Feature: Retail Account
 
   @updateProfile
   Scenario: Verify User can update Profile Information
-    And User update Name 'Jackphar' and Phone '916-234-1515'
+    And User update Name 'Zia' and Phone '916-234-1234'
     And User click on Update button
     Then user profile information should be updated
 
@@ -20,7 +20,7 @@ Feature: Retail Account
     And User click on Add a payment method link
     And User fill Debit or credit card information
       | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 5567567890126767 | Jackphar        |              10 |           2029 |          120 |
+      | 5567567890121212 | Zia        |              10 |           2029 |          120 |
     And User click on Add your card button
     Then a message should be displayed 'Payment Method added sucessfully'
 

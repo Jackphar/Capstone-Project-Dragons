@@ -1,4 +1,3 @@
-
 Feature: Retail Home
 
   Background: 

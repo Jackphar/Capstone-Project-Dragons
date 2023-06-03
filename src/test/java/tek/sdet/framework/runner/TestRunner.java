@@ -8,10 +8,10 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		tags = "",
+		tags = "@editPaymentMethod",
 		features = ("classpath:features"),
 		glue ="tek.sdet.framework",
-		dryRun = false,
+		dryRun = true,
 		// if dryRun = true: Step definition will be ignored
 		// if dryRun = False: step definition will be checked. 
 		plugin = {
