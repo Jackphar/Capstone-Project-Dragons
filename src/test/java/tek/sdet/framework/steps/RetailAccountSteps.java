@@ -87,22 +87,6 @@ public class RetailAccountSteps extends CommonUtility {
 	}
 
 	// Scenario: Verify User can edit Debit or Credit card
-//	@When("User click on the payment card that ends with {string}")
-//	public void userClickOnThePaymentCardThatWantToUpdate(String string) {
-////		slowDown();
-//		List<WebElement> cards = factory.accountPage().cardEndingNumber;
-//		for (WebElement card : cards) {
-//			if (card.getText().contains(string)) {
-//				System.out.println(card.getText());
-//				click(card);
-//				slowDown();
-//				logger.info(string + " is selected");
-//				break;
-//			}
-//		}
-
-//	}
-
 	@When("User click on Edit option of card section")
 	public void userClickOnEditOptionOfCardSection() {
 		click(factory.accountPage().editButtonPayment);

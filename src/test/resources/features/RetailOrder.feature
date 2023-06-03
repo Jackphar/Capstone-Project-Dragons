@@ -1,4 +1,3 @@
-
 Feature: Retail Order
 
   Background: 
