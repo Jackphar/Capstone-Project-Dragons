@@ -58,7 +58,7 @@ public class RetailAccountPage extends BaseSetup {
 	
 	// Scenario: Verify User can edit Debit or Credit card
 	@FindBy(xpath = "//p[@class='account__payment__sub-text']")
-	public List<WebElement> cardEndingNumber;
+	public WebElement debitOrCrediCard;
 	
 	@FindBy(xpath = "//div[@class='account__payment']//button[text()='Edit']")
 	public WebElement editButtonPayment;
