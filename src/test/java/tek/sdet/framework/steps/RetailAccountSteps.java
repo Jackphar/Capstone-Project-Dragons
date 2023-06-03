@@ -87,6 +87,12 @@ public class RetailAccountSteps extends CommonUtility {
 	}
 
 	// Scenario: Verify User can edit Debit or Credit card
+	@When("User click on the payment card")
+	public void userClickOnThePaymentCard() {
+	    click(factory.accountPage().debitOrCrediCard);
+	    
+	}
+
 	@When("User click on Edit option of card section")
 	public void userClickOnEditOptionOfCardSection() {
 		click(factory.accountPage().editButtonPayment);
