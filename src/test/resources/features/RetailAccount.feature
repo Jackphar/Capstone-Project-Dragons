@@ -10,7 +10,7 @@ Feature: Retail Account
 
   @updateProfile
   Scenario: Verify User can update Profile Information
-    And User update Name 'ZiaZiaJan' and Phone '916-234-1234'
+    And User update Name 'ZiaJan' and Phone '916-234-6776'
     And User click on Update button
     Then user profile information should be updated
 
@@ -19,7 +19,7 @@ Feature: Retail Account
     And User click on Add a payment method link
     And User fill Debit or credit card information
       | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 5567567890121717 | Ali        |              10 |           2029 |          120 |
+      | 5567567890125445 | Ali        |              10 |           2029 |          120 |
     And User click on Add your card button
     Then a message should be displayed 'Payment Method added sucessfully'
 
@@ -29,7 +29,7 @@ Feature: Retail Account
     And User click on Edit option of card section
     And User fill Debit or credit card information
       | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 8765092387459999 | Ahmad Jan  |              10 |           2042 |          787 |
+      | 8765092387453535 | Ahmad Jan  |              10 |           2042 |          787 |
     And user click on Update Your Card button
     Then this message should be displayed 'Payment Method updated Successfully'
 
