@@ -5059,3 +5059,26 @@
 2023-06-04 16:03:25,209 [main] INFO logger_file - user logged in into account
 2023-06-04 16:03:30,455 [main] INFO logger_file - user is on retail website
 2023-06-04 16:03:30,725 [main] INFO logger_file - user cliked on Sign In option
+2023-06-04 19:28:05,573 [main] INFO logger_file - user is on retail website
+2023-06-04 19:28:05,734 [main] INFO logger_file - user cliked on Sign In option
+2023-06-04 19:28:05,998 [main] INFO logger_file - user entered email and password
+2023-06-04 19:28:06,131 [main] INFO logger_file - user clicked on login button
+2023-06-04 19:28:06,544 [main] INFO logger_file - user logged in into account
+2023-06-04 19:28:07,075 [main] INFO logger_file - User changed the category to Smart Home
+2023-06-04 19:28:07,461 [main] INFO logger_file - User searched for kasa outdoor smart plug
+2023-06-04 19:28:07,574 [main] INFO logger_file - User clicked on Search icon
+2023-06-04 19:28:12,649 [main] INFO logger_file - User clicked on item
+2023-06-04 19:28:13,353 [main] INFO logger_file - User selected quantity 2
+2023-06-04 19:28:13,708 [main] INFO logger_file - User clicked Add to Cart button
+2023-06-04 19:28:18,736 [main] INFO logger_file - The cart icon quantity changed to2
+2023-06-04 19:33:26,964 [main] INFO logger_file - user is on retail website
+2023-06-04 19:33:27,145 [main] INFO logger_file - user cliked on Sign In option
+2023-06-04 19:33:27,410 [main] INFO logger_file - user entered email and password
+2023-06-04 19:33:27,539 [main] INFO logger_file - user clicked on login button
+2023-06-04 19:33:27,965 [main] INFO logger_file - user logged in into account
+2023-06-04 19:33:28,497 [main] INFO logger_file - User changed the category to Smart Home
+2023-06-04 19:33:29,002 [main] INFO logger_file - User searched for kasa outdoor smart plug
+2023-06-04 19:33:29,108 [main] INFO logger_file - User clicked on Search icon
+2023-06-04 19:33:34,202 [main] INFO logger_file - User clicked on item
+2023-06-04 19:33:34,884 [main] INFO logger_file - User selected quantity 2
+2023-06-04 19:33:35,233 [main] INFO logger_file - User clicked Add to Cart button
