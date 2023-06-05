@@ -23,7 +23,7 @@ public class RetailOrderPage extends BaseSetup {
 	@FindBy(id = "searchBtn")
 	public WebElement searchBtn;
 	
-	@FindBy(xpath = "/html/body/div/div[1]/div[1]/div[3]/div/div/p[1]")
+	@FindBy(xpath = "//img[@class='image']")
 	public WebElement productImg;
 	
 	@FindBy(xpath = "//select[@class='product__select']")
