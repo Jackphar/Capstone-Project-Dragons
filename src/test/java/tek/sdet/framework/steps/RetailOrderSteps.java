@@ -26,7 +26,7 @@ public class RetailOrderSteps extends CommonUtility {
 	public void userSearchForAnItem(String string) {
 		clearTextUsingSendKeys(factory.orderPage().searchInput);
 		sendText(factory.orderPage().searchInput, string);
-//		click(factory.orderPage().searchInput);
+		click(factory.orderPage().searchInput);
 		logger.info("User searched for " + string);
 	}
 

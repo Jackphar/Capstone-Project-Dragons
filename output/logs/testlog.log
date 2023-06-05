@@ -5059,3 +5059,26 @@
 2023-06-04 16:03:25,209 - logger_file -INFO - user logged in into account
 2023-06-04 16:03:30,455 - logger_file -INFO - user is on retail website
 2023-06-04 16:03:30,725 - logger_file -INFO - user cliked on Sign In option
+2023-06-04 19:28:05,573 - logger_file -INFO - user is on retail website
+2023-06-04 19:28:05,734 - logger_file -INFO - user cliked on Sign In option
+2023-06-04 19:28:05,998 - logger_file -INFO - user entered email and password
+2023-06-04 19:28:06,131 - logger_file -INFO - user clicked on login button
+2023-06-04 19:28:06,544 - logger_file -INFO - user logged in into account
+2023-06-04 19:28:07,075 - logger_file -INFO - User changed the category to Smart Home
+2023-06-04 19:28:07,461 - logger_file -INFO - User searched for kasa outdoor smart plug
+2023-06-04 19:28:07,574 - logger_file -INFO - User clicked on Search icon
+2023-06-04 19:28:12,649 - logger_file -INFO - User clicked on item
+2023-06-04 19:28:13,353 - logger_file -INFO - User selected quantity 2
+2023-06-04 19:28:13,708 - logger_file -INFO - User clicked Add to Cart button
+2023-06-04 19:28:18,736 - logger_file -INFO - The cart icon quantity changed to2
+2023-06-04 19:33:26,964 - logger_file -INFO - user is on retail website
+2023-06-04 19:33:27,145 - logger_file -INFO - user cliked on Sign In option
+2023-06-04 19:33:27,410 - logger_file -INFO - user entered email and password
+2023-06-04 19:33:27,539 - logger_file -INFO - user clicked on login button
+2023-06-04 19:33:27,965 - logger_file -INFO - user logged in into account
+2023-06-04 19:33:28,497 - logger_file -INFO - User changed the category to Smart Home
+2023-06-04 19:33:29,002 - logger_file -INFO - User searched for kasa outdoor smart plug
+2023-06-04 19:33:29,108 - logger_file -INFO - User clicked on Search icon
+2023-06-04 19:33:34,202 - logger_file -INFO - User clicked on item
+2023-06-04 19:33:34,884 - logger_file -INFO - User selected quantity 2
+2023-06-04 19:33:35,233 - logger_file -INFO - User clicked Add to Cart button
