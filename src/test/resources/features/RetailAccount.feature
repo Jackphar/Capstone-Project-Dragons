@@ -11,7 +11,7 @@ Feature: Retail Account
 
   @updateProfile @regression
   Scenario: Verify User can update Profile Information
-    And User update Name 'Rasoul' and Phone '916-234-6776'
+    And User update Name 'Dastageer' and Phone '916-234-4565'
     And User click on Update button
     Then user profile information should be updated
 
@@ -30,7 +30,7 @@ Feature: Retail Account
     And User click on Edit option of card section
     And User fill Debit or credit card information
       | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 8765092387451212 | Ahmad Jan  |              10 |           2042 |          787 |
+      | 8765092387457878 | Dastageer  |              10 |           2030 |          787 |
     And user click on Update Your Card button
     Then this message should be displayed 'Payment Method updated Successfully'
 
@@ -44,8 +44,8 @@ Feature: Retail Account
   Scenario: Verify User can add an Address
     And User click on Add address option
     And user fill new address form with below information
-      | country | fullName | phoneNumber  | streetAddress  | apt | city     | state     | zipCode |
-      | Spain   | Nadia    | 916-234-3434 | 342 Cris Str   |  12 | SpanCity | Barcelona |   34212 |
+      | country       | fullName | phoneNumber  | streetAddress | apt | city       | state      | zipCode |
+      | United States | Nadia    | 916 234 3434 | Cris Str      |  12 | Sacramento | California |   34212 |
     And User click Add Your Address button
     Then the message should be displayed 'Address Added Successfully'
 
@@ -53,8 +53,8 @@ Feature: Retail Account
   Scenario: Verify User can edit an Address added on account
     And User click on edit address option
     And user fill new address form with below information
-      | country     | fullName | phoneNumber  | streetAddress  | apt | city  | state | zipCode |
-      | Afghanistan | Azizi   | 123-456-1908 | 123 Karte Char |  09 | Kabul | Kabul |   34345 |
+      | country     | fullName  | phoneNumber  | streetAddress | apt | city  | state | zipCode |
+      | Afghanistan | Dastageer | 123 456 1908 | Karte Char    |  09 | Kabul | Kabul |   34345 |
     And User click update Your Address button
     Then This message should be displayed 'Address Updated Successfully'
 

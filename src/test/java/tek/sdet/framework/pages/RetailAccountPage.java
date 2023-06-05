@@ -27,7 +27,7 @@ public class RetailAccountPage extends BaseSetup {
 	@FindBy(id = "personalUpdateBtn")
 	public WebElement personalUpdateButton;
 	
-	@FindBy(xpath = "//div[text()='Personal Information Updated Successfully']")
+	@FindBy(xpath = "/html/body/div/div[2]/div/div/div[1]/div[2]")
 	public WebElement personalInfoUpdateSuccessMessage;
 	
 	// Scenario: Verify User can add a payment method
@@ -52,7 +52,7 @@ public class RetailAccountPage extends BaseSetup {
 	@FindBy(id = "paymentSubmitBtn")
 	public WebElement addYourCardBtn;
 	
-	@FindBy(xpath = "//div[text()='Payment Method added sucessfully']")
+	@FindBy(xpath = "/html/body/div/div[2]/div/div/div[1]/div[2]]")
 	public WebElement addPaymntSuccessMessage;
 	
 	
@@ -104,7 +104,7 @@ public class RetailAccountPage extends BaseSetup {
 	@FindBy(id = "addressBtn")
 	public WebElement addYourAddressBtn;
 	
-	@FindBy(xpath = "//div[text()='Address Added Successfully']")
+	@FindBy(xpath = "/html/body/div/div[2]/div/div/div[1]/div[2]")
 	public WebElement addressAddSuccessMessage;
 	
 	// Scenario: Verify User can edit an Address added on account
