@@ -11,7 +11,7 @@ Feature: Retail Account
 
   @updateProfile @regression
   Scenario: Verify User can update Profile Information
-    And User update Name 'Dastageer' and Phone '916-234-4565'
+    And User update Name 'DastageerKhan' and Phone '916-234-4565'
     And User click on Update button
     Then user profile information should be updated
 
@@ -30,7 +30,7 @@ Feature: Retail Account
     And User click on Edit option of card section
     And User fill Debit or credit card information
       | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 8765092387457878 | Dastageer  |              10 |           2030 |          787 |
+      | 8765092387454545 | Dastageer  |              10 |           2030 |          787 |
     And user click on Update Your Card button
     Then this message should be displayed 'Payment Method updated Successfully'
 
@@ -45,7 +45,7 @@ Feature: Retail Account
     And User click on Add address option
     And user fill new address form with below information
       | country       | fullName | phoneNumber  | streetAddress | apt | city       | state      | zipCode |
-      | United States | Nadia    | 916 234 3434 | Cris Str      |  12 | Sacramento | California |   34212 |
+      | United States | Esmat    | 916 234 3434 | Cris Str      |  12 | Sacramento | California |   34212 |
     And User click Add Your Address button
     Then the message should be displayed 'Address Added Successfully'
 
@@ -54,7 +54,7 @@ Feature: Retail Account
     And User click on edit address option
     And user fill new address form with below information
       | country     | fullName  | phoneNumber  | streetAddress | apt | city  | state | zipCode |
-      | Afghanistan | Dastageer | 123 456 1908 | Karte Char    |  09 | Kabul | Kabul |   34345 |
+      | Afghanistan | Turkan | 123 456 1908 | Karte Char    |  09 | Kabul | Kabul |   34345 |
     And User click update Your Address button
     Then This message should be displayed 'Address Updated Successfully'
 
