@@ -1,3 +1,4 @@
+@regression
 Feature: Retail Order
 
   Background: 
@@ -7,7 +8,7 @@ Feature: Retail Order
     And User click on login button
     And User should be logged into Account
 
-  @addItemToCart
+  @addItemToCart @regression
   Scenario: Verify User can add an item to cart
     And User change the category to 'Smart Home'
     And User search for an item 'kasa outdoor smart plug'
@@ -17,7 +18,7 @@ Feature: Retail Order
     And User click add to Cart button
     Then The cart icon quantity should change to '2'
 
-  @placeOrder
+  @placeOrder @regression
   Scenario: Verify User can place an order with Shipping address and payment Method on file​​​​​​​
     And User change the category to 'Smart Home'
     And User search for an item 'kasa outdoor smart plug'
@@ -31,7 +32,7 @@ Feature: Retail Order
     And User click on Place Your Order
     Then A message should be displayed 'Order Placed, Thanks'
 
-  @cancelOrder
+  @cancelOrder @regression
   Scenario: Verify User can cancel the order
     And User click on Orders section
     And User click on first order in list
@@ -40,7 +41,7 @@ Feature: Retail Order
     And User click on Cancel Order button
     Then a cancelation message should be displayed 'Your Order Has Been Cancelled'
 
-  @returnOrder
+  @returnOrder @regression
   Scenario: Verify User can Return the order
     And User click on Orders section
     And User click on first order in list
@@ -50,7 +51,7 @@ Feature: Retail Order
     And User click on Return Order button
     Then a return message should be displayed 'Return was successfull'
 
-  @reviewOnOrder
+  @reviewOnOrder @regression
   Scenario: Verify User can write a review on order placed
     And User click on Orders section
     And User click on first order in list
