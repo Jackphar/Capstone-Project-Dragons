@@ -2,6 +2,7 @@ package tek.sdet.framework.steps;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
@@ -58,6 +59,32 @@ public class HomeSteps extends CommonUtility {
 			}
 		}
 
+	}
+	public static void main(String[] args) {
+		  int[] evenNumberArray = { 13,  25, 58,  42,  34,  27,  65,  18 };
+		  int[] oddNumberArray = { 23, 34, 21, 43, 98, 11, 16 };
+
+		    int evenSum = 0;
+		    int oddSum = 0;
+		    int evenAndOddSum = 0;
+
+		    for(int i : evenNumberArray) {
+		    	if(i %2 == 0) {
+		      evenSum += i;
+		    	}
+		    }
+		    System.out.println("Even sum: " + evenSum);
+		    
+			for (int t : oddNumberArray) {
+				if (t %2 == 1) {
+					oddSum += t;
+				}
+			}
+		    System.out.println("Odd sum: " + oddSum);
+
+		    evenAndOddSum = evenSum + oddSum;
+		    System.out.println("Total sum: " + evenAndOddSum);
+		   
 	}
 
 }
