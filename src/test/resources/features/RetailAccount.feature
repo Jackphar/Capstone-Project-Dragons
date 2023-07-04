@@ -54,7 +54,7 @@ Feature: Retail Account
     And User click on edit address option
     And user fill new address form with below information
       | country     | fullName  | phoneNumber  | streetAddress | apt | city  | state | zipCode |
-      | Afghanistan | Elon Musk | 123 456 1908 | Karte Char    |  09 | Kabul | Kabul |   34345 |
+      | Afghanistan | Elon Musk | 123 456 1908 | Karte Char    |  09 | San Fransisco | CA |   34345 |
     And User click update Your Address button
     Then This message should be displayed 'Address Updated Successfully'
 
