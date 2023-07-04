@@ -5082,3 +5082,8 @@
 2023-06-04 19:33:34,202 - logger_file -INFO - User clicked on item
 2023-06-04 19:33:34,884 - logger_file -INFO - User selected quantity 2
 2023-06-04 19:33:35,233 - logger_file -INFO - User clicked Add to Cart button
+2023-06-27 17:44:58,168 - logger_file -INFO - user is on retail website
+2023-06-27 17:44:58,557 - logger_file -INFO - user cliked on Sign In option
+2023-06-27 17:44:59,293 - logger_file -INFO - user entered email and password
+2023-06-27 17:44:59,517 - logger_file -INFO - user clicked on login button
+2023-06-27 17:45:00,173 - logger_file -INFO - user logged in into account
